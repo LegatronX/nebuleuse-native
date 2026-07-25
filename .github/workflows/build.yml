@@ -1,0 +1,44 @@
+name: build-ipa
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sélectionner Xcode
+        run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer || sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Télécharger les assets (repo principal)
+        run: |
+          curl -sfL -o NebuleuseNative/Resources/bg-nebula.png "https://raw.githubusercontent.com/LegatronX/nebuleuse-protocol-iv/main/native-assets/bg-nebula.png"
+          curl -sfL -o NebuleuseNative/Resources/music-glass.mp3 "https://raw.githubusercontent.com/LegatronX/nebuleuse-protocol-iv/main/native-assets/music-glass.mp3"
+          ls -la NebuleuseNative/Resources/
+
+      - name: Build (non signé)
+        run: |
+          xcodebuild -project NebuleuseNative.xcodeproj \
+            -scheme NebuleuseNative \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            build
+
+      - name: Empaqueter l'IPA
+        run: |
+          mkdir -p Payload
+          cp -r "build/Build/Products/Release-iphoneos/NebuleuseNative.app" Payload/
+          zip -qry NebuleuseNative.ipa Payload
+          ls -la NebuleuseNative.ipa
+
+      - name: Artifact IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: NebuleuseNative-ipa
+          path: NebuleuseNative.ipa
+          retention-days: 30
