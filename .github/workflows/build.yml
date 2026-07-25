@@ -13,11 +13,6 @@ jobs:
       - name: Sélectionner Xcode
         run: sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer || sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 
-      - name: Télécharger les assets (repo principal)
-        run: |
-          curl -sfL -o NebuleuseNative/Resources/bg-nebula.png "https://raw.githubusercontent.com/LegatronX/nebuleuse-protocol-iv/main/native-assets/bg-nebula.png"
-          curl -sfL -o NebuleuseNative/Resources/music-glass.mp3 "https://raw.githubusercontent.com/LegatronX/nebuleuse-protocol-iv/main/native-assets/music-glass.mp3"
-          ls -la NebuleuseNative/Resources/
 
       - name: Build (non signé)
         run: |
