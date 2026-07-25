@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA00000000000000000000A1 /* NebuleuseNativeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000000000000000000A1 /* NebuleuseNativeApp.swift */; };
+		AA00000000000000000000A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000000000000000000A2 /* ContentView.swift */; };
+		AA00000000000000000000A3 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000000000000000000A3 /* GameScene.swift */; };
+		AA00000000000000000000A4 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000000000000000000A4 /* Haptics.swift */; };
+		AA00000000000000000000A5 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB00000000000000000000A5 /* AudioManager.swift */; };
+		AA00000000000000000000A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB00000000000000000000A6 /* Assets.xcassets */; };
+		AA00000000000000000000A7 /* music-glass.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BB00000000000000000000A7 /* music-glass.mp3 */; };
+		AA00000000000000000000A8 /* bg-nebula.png in Resources */ = {isa = PBXBuildFile; fileRef = BB00000000000000000000A8 /* bg-nebula.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB00000000000000000000A1 /* NebuleuseNativeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NebuleuseNativeApp.swift; sourceTree = "<group>"; };
+		BB00000000000000000000A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB00000000000000000000A3 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		BB00000000000000000000A4 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		BB00000000000000000000A5 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		BB00000000000000000000A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB00000000000000000000A7 /* music-glass.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-glass.mp3"; sourceTree = "<group>"; };
+		BB00000000000000000000A8 /* bg-nebula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-nebula.png"; sourceTree = "<group>"; };
+		BB00000000000000000000B1 /* NebuleuseNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NebuleuseNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC00000000000000000000C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD00000000000000000000D1 = {
+			isa = PBXGroup;
+			children = (
+				DD00000000000000000000D2 /* NebuleuseNative */,
+				DD00000000000000000000D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD00000000000000000000D2 /* NebuleuseNative */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000000000000000000A1 /* NebuleuseNativeApp.swift */,
+				BB00000000000000000000A2 /* ContentView.swift */,
+				BB00000000000000000000A3 /* GameScene.swift */,
+				BB00000000000000000000A4 /* Haptics.swift */,
+				BB00000000000000000000A5 /* AudioManager.swift */,
+				BB00000000000000000000A6 /* Assets.xcassets */,
+				DD00000000000000000000D3 /* Resources */,
+			);
+			path = NebuleuseNative;
+			sourceTree = "<group>";
+		};
+		DD00000000000000000000D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000000000000000000A7 /* music-glass.mp3 */,
+				BB00000000000000000000A8 /* bg-nebula.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DD00000000000000000000D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB00000000000000000000B1 /* NebuleuseNative.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE00000000000000000000E1 /* NebuleuseNative */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF00000000000000000000F2 /* Build configuration list for PBXNativeTarget "NebuleuseNative" */;
+			buildPhases = (
+				CC00000000000000000000C2 /* Sources */,
+				CC00000000000000000000C1 /* Frameworks */,
+				CC00000000000000000000C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NebuleuseNative;
+			productName = NebuleuseNative;
+			productReference = BB00000000000000000000B1 /* NebuleuseNative.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE00000000000000000000E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = FF00000000000000000000F1 /* Build configuration list for PBXProject "NebuleuseNative" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD00000000000000000000D1;
+			productRefGroup = DD00000000000000000000D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE00000000000000000000E1 /* NebuleuseNative */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC00000000000000000000C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00000000000000000000A6 /* Assets.xcassets in Resources */,
+				AA00000000000000000000A7 /* music-glass.mp3 in Resources */,
+				AA00000000000000000000A8 /* bg-nebula.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC00000000000000000000C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00000000000000000000A1 /* NebuleuseNativeApp.swift in Sources */,
+				AA00000000000000000000A2 /* ContentView.swift in Sources */,
+				AA00000000000000000000A3 /* GameScene.swift in Sources */,
+				AA00000000000000000000A4 /* Haptics.swift in Sources */,
+				AA00000000000000000000A5 /* AudioManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF1000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FF1000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Nébuleuse IV";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.legatronx.nebuleuse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FF1000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_ALLOWED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Nébuleuse IV";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.legatronx.nebuleuse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF00000000000000000000F1 /* Build configuration list for PBXProject "NebuleuseNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1000000000000000000001 /* Debug */,
+				FF1000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF00000000000000000000F2 /* Build configuration list for PBXNativeTarget "NebuleuseNative" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1000000000000000000003 /* Debug */,
+				FF1000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE00000000000000000000E0 /* Project object */;
+}
